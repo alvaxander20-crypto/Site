@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Contenedor principal flexbox */
+.grid-productos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilos de la tarjeta individual */
+.tarjeta-producto {
+    background-color: white;
+    padding: 20px;
+    width: 220px;
+    border-radius: 10px;
+    text-align: center;
+    border-top: 5px solid #007bff; /* Detalle de color de la guía */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra para darle volumen */
+    transition: transform 0.25s;
+}
+
+/* Efecto al pasar el ratón */
+.tarjeta-producto:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para las fotos de los productos */
+.tarjeta-producto img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain; /* Para que la imagen no se deforme */
+    margin-bottom: 15px;
+}
+
+.tarjeta-producto h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.tarjeta-producto p {
+    font-size: 1.2em;
+    color: #28a745;
+    font-weight: bold;
+    margin: 0;
+}
